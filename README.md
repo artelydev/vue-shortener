@@ -1,5 +1,7 @@
 # :lollipop: Vue URL Shortener
 
+This is ***backend-agnostic*** project structure as opposed to [monolithic example](https://github.com/cxsper/react-shortener/tree/react).
+
 What I'm gonna use:
 
 * [Vue](https://github.com/vuejs/vue)
