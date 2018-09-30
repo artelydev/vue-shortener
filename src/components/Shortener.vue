@@ -82,7 +82,7 @@ export default
 
         # if it's present - return shortened
         if existing
-          @shortened = exiting.shortened
+          @shortened = existing.shortened
           return
 
         # otherwise make hash
