@@ -1,6 +1,6 @@
 <template lang="pug">
   a.sticker(
-    href="reference"
+    :href="reference"
     target="_blank"
   )
     img.img(:src="image")
