@@ -16,10 +16,8 @@
 
 </script>
 
-<style lang="stylus">
-
-$color = #35495E
-$bg = #41B883
+<style lang="stylus" scoped>
+@require '../utils/variables.sss'
 
 .button
   cursor: pointer

@@ -1,32 +1,40 @@
 <template lang="pug">
   .hello
-    h1 {{ msg }}
-    p
-      | For guide and recipes on how to configure / customize this project,
-      br
-      | check out the
-      a(href="https://cli.vuejs.org", target="_blank", rel="noopener")
-        | vue-cli documentation
-    h3 Installed CLI Plugins
     div
       btn(:onclick="onClick") Shorten
+
+    div
+      inp(:val="url", kind="text", :valid="isValid", :onchange="onInputChange")
 
 </template>
 
 <script lang="coffee">
 import Button from './Button'
+import Input from './Input'
 
 export default
   name: "HelloWorld"
+  data: ->
+    url: ''
+
   props:
     msg: String
 
   components:
     btn: Button
+    inp: Input
 
   methods:
     onClick: ->
       console.log 'hi'
+
+    onInputChange: (e) ->
+      { value } = e.target
+      @url = value
+
+  computed:
+    isValid: ->
+      !!@url.match /^(?:http(s)?:\/\/)[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/
 
 </script>
 
