@@ -22,7 +22,6 @@
 .button
   cursor: pointer
   outline: none
-  transform: translate3d(-50%, -50%, 0)
   backface-visibility: hidden
   position: relative
   display: inline-block
@@ -73,7 +72,7 @@
     border: 1px solid transparent
     z-index: 1
 
-  &:hover
+  &:hover:not(:disabled)
     span:before
       animation: fill .5s ease-out
       animation-fill-mode: forwards
@@ -81,7 +80,7 @@
     &:after
       animation: swoosh .7s ease-in
 
-  &:active
+  &:active:not(:disabled)
     &:before
       background-color: darken($bg, 20%)
 

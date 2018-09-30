@@ -1,7 +1,7 @@
 const {DefinePlugin} = require('webpack');
 
 module.exports = {
-  configureWebpack: [
+  configureWebpack: {
     plugins: [
       new DefinePlugin({
         'process.env': {
@@ -10,5 +10,5 @@ module.exports = {
         }
       })
     ]
-  ]
+  }
 }
