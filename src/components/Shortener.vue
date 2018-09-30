@@ -14,7 +14,7 @@
         :valid="isUrlValid"
         :autofocus="true"
       )
-      
+
     .button-wrapper
       Button(
         :onclick="createShortLink"
@@ -37,7 +37,7 @@ fallback =
   shortened: ''
 
 export default
-  data: -> fallback
+  data: -> Object.assign({}, fallback)
 
   components: { Input, Button, Copier }
 
@@ -63,7 +63,7 @@ export default
           , 3000
         .then () => @resetMessage()
 
-    storeLink: (hash) =>
+    storeLink: (hash) ->
       links.store
         url: @url
         shortened: hash
@@ -89,8 +89,6 @@ export default
         links.count().then (res) =>
           hash = base62 +res.data
           @storeLink hash
-
-
 
 </script>
 

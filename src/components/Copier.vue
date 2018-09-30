@@ -10,12 +10,12 @@
         type: String
         required: true
 
-      onCopy:
+      oncopy:
         type: Function
         required: false
 
     methods:
-      handleOnClick: (e) =>
+      copy: (e) ->
         el = document.createElement 'textarea'
         el.value = @what
         el.setAttribute 'readonly', ''
@@ -25,7 +25,7 @@
         el.select()
         document.execCommand 'copy'
         document.body.removeChild el
-        
-        if @onCopy
-          do @onCopy
+
+        if @oncopy
+          do @oncopy
 </script>
