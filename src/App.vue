@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Sticker image="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png" reference="https://github.com/cxsper/vue-shortener"></Sticker>
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
+import Sticker from "./components/Sticker.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    HelloWorld,
+    Sticker
   }
 };
 </script>
