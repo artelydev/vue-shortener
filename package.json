@@ -17,8 +17,11 @@
     "@vue/cli-service": "^3.0.4",
     "@vue/test-utils": "^1.0.0-beta.20",
     "chai": "^4.1.2",
+    "coffee-loader": "^0.9.0",
+    "coffeescript": "^2.3.2",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
+    "vue-cli-plugin-coffee": "^0.1.0",
     "vue-cli-plugin-pug": "^1.0.7",
     "vue-template-compiler": "^2.5.17"
   }
