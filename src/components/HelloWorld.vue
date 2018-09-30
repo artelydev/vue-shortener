@@ -8,13 +8,25 @@
       a(href="https://cli.vuejs.org", target="_blank", rel="noopener")
         | vue-cli documentation
     h3 Installed CLI Plugins
+    div
+      btn(:onclick="onClick") Shorten
+
 </template>
 
 <script lang="coffee">
+import Button from './Button'
+
 export default
   name: "HelloWorld"
   props:
     msg: String
+
+  components:
+    btn: Button
+
+  methods:
+    onClick: ->
+      console.log 'hi'
 
 </script>
 
