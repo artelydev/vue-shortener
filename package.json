@@ -24,7 +24,7 @@
     "coffeescript": "2.3.2",
     "stylus": "0.54.5",
     "stylus-loader": "3.0.2",
-    "sugarss": "2.0.0",
+    "sugarss": "3.0.3",
     "vue-cli-plugin-coffee": "0.1.0",
     "vue-cli-plugin-pug": "1.0.7",
     "vue-cli-plugin-sugarss": "0.1.3",
