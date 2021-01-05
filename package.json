@@ -18,7 +18,7 @@
     "@vue/cli-plugin-babel": "4.4.4",
     "@vue/cli-plugin-unit-mocha": "4.4.4",
     "@vue/test-utils": "1.0.0-beta.25",
-    "axios": "0.18.1",
+    "axios": "0.21.1",
     "chai": "4.2.0",
     "coffee-loader": "0.9.0",
     "coffeescript": "2.3.2",
