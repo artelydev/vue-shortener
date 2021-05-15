@@ -20,7 +20,7 @@
     "@vue/test-utils": "1.0.0-beta.25",
     "axios": "0.18.1",
     "chai": "4.2.0",
-    "coffee-loader": "0.9.0",
+    "coffee-loader": "3.0.0",
     "coffeescript": "2.3.2",
     "stylus": "0.54.5",
     "stylus-loader": "3.0.2",
