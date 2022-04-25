@@ -21,7 +21,7 @@
     "axios": "0.18.1",
     "chai": "4.2.0",
     "coffee-loader": "0.9.0",
-    "coffeescript": "2.3.2",
+    "coffeescript": "2.7.0",
     "stylus": "0.54.5",
     "stylus-loader": "3.0.2",
     "sugarss": "2.0.0",
