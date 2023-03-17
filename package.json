@@ -12,7 +12,7 @@
   "dependencies": {
     "express": "4.16.3",
     "vue": "2.5.17",
-    "@vue/cli-service": "4.4.4" 
+    "@vue/cli-service": "5.0.1" 
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "4.4.4",
